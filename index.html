@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  *{
+   margin: 0px;
+   padding: 0px;
+  }
+  #header{
+   display: flex;
+   position: relative;
+   height: 100%;
+   width: 100%;
+   
+  }
+  #header div{
+   padding: 5px;
+  }
+  #header:before{
+   content: "";
+   background-color: blue;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   position:absolute;
+  }
+ .btn
+  {
+position: absolute;
+top: 14px;
+right: 105px;
+width: 105px;
+
+  }
+  .rightlogo img{
+   position: absolute;
+   right: 31px;
+   top: 21px;
+   height: 50px;
+   width: 50px;
+  }
+  .heading h1{
+ position: absolute;
+ right: 507px;
+ top: 6px;
+ font-size: 2rem;
+   
+  }
+  .brandlogo img{
+   height: 78px;
+   width: 371px;
+  }
+  .emblem img{
+   height: 76px;
+   width: 46px;
+  }
+  #pop{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  #pop::before{
+   content: "";
+   background-color: rgba(49, 100, 192,1);
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   position:absolute;
+  }
+  #pop img
+  {
+   height: 50px;
+   width: 50px;
+   padding: 10px;
+  }
+  #pop div{
+   margin: 5px;
+
+  }
+  #pop input{
+   position: absolute;
+   right: 10px;
+   height: 25px;
+   border-radius: 10px;
+   text-align: center;
+  }
+ </style>
+</head>
+<body>
+<section id="header">
+<div class="emblem">
+ <img src="emblem.png" alt="">
+</div>
+<div class="brandlogo">
+ <img src="brand_logo-1.png" alt="">
+</div>
+<div class="heading">
+ <h1>ZOOBOX</h1>
+</div>
+<div class="btn">
+ <button class="btn">Login/Sign in</button>
+</div>
+<div class="rightlogo">
+ <img src="right_logo.png" alt="">
+</div>
+
+
+
+</section>
+<section id="pop">
+<div class="home">
+ <img src="home.png" alt="">
+</div>
+<div class="lectures">
+ <img src="Lectures.png" alt="">
+</div>
+
+
+<div class="profile">
+ <img src="profile.png" alt="">
+</div>
+<input type="search" name="" id="" placeholder="search">
+
+
+</section>
+</body>
+</html>
